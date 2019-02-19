@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Tusky.Tests" namespace="Tusky.Tests.Types">
+  <class name="NodaTimeModel" table="nodatime_model">
+    <id name="Id" column="id">
+      <generator class="sequence">
+        <param name="sequence">nodatime_model_id_seq</param>
+      </generator>
+    </id>
+    <property name="TimestampOneProperty" column="timestamp_one_column" type="Instant" />
+    <property name="TimestampTwoProperty" column="timestamp_two_column" type="LocalDateTime" />
+    <property name="DateProperty" column="date_column" type="LocalDate" />
+    <property name="TimeProperty" column="time_column" type="LocalTime" />
+    <property name="TimestampTzOneProperty" column="timestamptz_one_column" type="ZonedDateTime" />
+    <property name="TimestampTzTwoProperty" column="timestamptz_two_column" type="OffsetDateTime" />
+    <!--<property name="DateTzProperty" column="datetz_column" type="OffsetDate" />-->
+    <property name="TimeTzProperty" column="timetz_column" type="OffsetTime" />
+    <property name="IntervalProperty" column="interval_column" type="Period" />
+  </class>
+</hibernate-mapping>

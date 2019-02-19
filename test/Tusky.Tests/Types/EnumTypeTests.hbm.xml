@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Tusky.Tests" namespace="Tusky.Tests.Types">
+  <typedef class="Tusky.Types.EnumType`1[Mood], Tusky" name="Mood" />
+  <class name="EnumModel" table="enum_model">
+    <id name="Id" column="id">
+      <generator class="sequence">
+        <param name="sequence">enum_model_id_seq</param>
+      </generator>
+    </id>
+    <property name="CurrentMood" column="current_mood" type="Mood" />
+  </class>
+</hibernate-mapping>

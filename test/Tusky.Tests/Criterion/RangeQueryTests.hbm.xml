@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Tusky.Tests" namespace="Tusky.Tests.Criterion">
+  <class name="Campaign" table="campaign">
+    <id name="Id" column="id">
+      <generator class="sequence">
+        <param name="sequence">campaign_id_seq</param>
+      </generator>
+    </id>
+    <property name="PriceRange" column="price_range" type="DecimalRange" />
+    <property name="DiscountRate" column="discount_rate" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Tusky.Tests" namespace="Tusky.Tests.Types">
+  <class name="ArraySingleRankModel" table="array_single_rank_model">
+    <id name="Id" column="id">
+      <generator class="sequence">
+        <param name="sequence">array_single_rank_model_id_seq</param>
+      </generator>
+    </id>
+    <property name="Int16ArrayProperty" column="int16_array_column" type="Int16Array" />
+    <property name="Int32ArrayProperty" column="int32_array_column" type="Int32Array" />
+    <property name="Int64ArrayProperty" column="int64_array_column" type="Int64Array" />
+    <property name="DecimalArrayProperty" column="decimal_array_column" type="DecimalArray" />
+    <property name="SingleArrayProperty" column="single_array_column" type="SingleArray" />
+    <property name="DoubleArrayProperty" column="double_array_column" type="DoubleArray" />
+    <property name="StringArrayProperty" column="string_array_column" type="StringArray" />
+    <property name="BooleanArrayProperty" column="boolean_array_column" type="BooleanArray" />
+    <property name="DateTimeArrayProperty" column="date_time_array_column" type="DateTimeArray" />
+  </class>
+  <class name="ArrayMultipleRankModel" table="array_multiple_rank_model">
+    <id name="Id" column="id">
+      <generator class="sequence">
+        <param name="sequence">array_multiple_rank_model_id_seq</param>
+      </generator>
+    </id>
+    <property name="Int16ArrayProperty" column="int16_array_column">
+      <type name="Int16Array">
+        <param name="rank">2</param>
+      </type>
+    </property>
+    <property name="Int32ArrayProperty" column="int32_array_column">
+      <type name="Int32Array">
+        <param name="rank">2</param>
+      </type>
+    </property>
+    <property name="Int64ArrayProperty" column="int64_array_column">
+      <type name="Int64Array">
+        <param name="rank">2</param>
+      </type>
+    </property>
+    <property name="DecimalArrayProperty" column="decimal_array_column">
+      <type name="DecimalArray">
+        <param name="rank">2</param>
+      </type>
+    </property>
+    <property name="SingleArrayProperty" column="single_array_column">
+      <type name="SingleArray">
+        <param name="rank">2</param>
+      </type>
+    </property>
+    <property name="DoubleArrayProperty" column="double_array_column">
+      <type name="DoubleArray">
+        <param name="rank">2</param>
+      </type>
+    </property>
+    <property name="StringArrayProperty" column="string_array_column">
+      <type name="StringArray">
+        <param name="rank">2</param>
+      </type>
+    </property>
+    <property name="BooleanArrayProperty" column="boolean_array_column">
+      <type name="BooleanArray">
+        <param name="rank">2</param>
+      </type>
+    </property>
+    <property name="DateTimeArrayProperty" column="date_time_array_column">
+      <type name="DateTimeArray">
+        <param name="rank">2</param>
+      </type>
+    </property>
+  </class>
+</hibernate-mapping>

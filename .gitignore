@@ -1,0 +1,25 @@
+# User-specific
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+.vs/
+.vscode/
+.DS_Store
+
+# Build results
+[Bb]in/
+[Bb]uild/
+[Oo]bj/
+
+# Publish
+*.[Pp]ublish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+
+# NuGet
+.nuget/
+*.nupkg
+**/packages/*

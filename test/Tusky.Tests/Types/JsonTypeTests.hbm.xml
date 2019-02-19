@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Tusky.Tests" namespace="Tusky.Tests.Types">
+  <typedef class="Tusky.Types.JsonType`1[SampleObject], Tusky" name="SampleObjectJson" />
+  <typedef class="Tusky.Types.JsonbType`1[SampleObject], Tusky" name="SampleObjectJsonb" />
+  <class name="JsonModel" table="json_model">
+    <id name="Id" column="id">
+      <generator class="sequence">
+        <param name="sequence">json_model_id_seq</param>
+      </generator>
+    </id>
+    <property name="SampleObjectJson" column="sample_object_json" type="SampleObjectJson" />
+    <property name="SampleObjectJsonb" column="sample_object_jsonb" type="SampleObjectJsonb" />
+  </class>
+</hibernate-mapping>

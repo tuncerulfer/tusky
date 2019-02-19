@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Tusky.Tests" namespace="Tusky.Tests.Types">
+  <class name="RangeModel" table="range_model">
+    <id name="Id" column="id">
+      <generator class="sequence">
+        <param name="sequence">range_model_id_seq</param>
+      </generator>
+    </id>
+    <property name="Int32RangeProperty" column="int32_range_column" type="Int32Range" />
+    <property name="Int64RangeProperty" column="int64_range_column" type="Int64Range" />
+    <property name="DecimalRangeProperty" column="decimal_range_column" type="DecimalRange" />
+    <property name="TimestampRangeProperty" column="timestamp_range_column" type="LocalDateTimeRange" />
+    <property name="TimestampTzOneRangeProperty" column="timestamptz_one_range_column" type="OffsetDateTimeRange" />
+    <!--<property name="TimestampTzTwoRangeProperty" column="timestamptz_two_range_column" type="ZonedDateTimeRange" />-->
+    <property name="DateRangeProperty" column="date_range_column" type="LocalDateRange" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+# default
+* text=auto
+
+# text files
+*.cs      text diff=csharp
+*.ps1     text
+*.cmd     text
+*.msbuild text
+*.md      text
+
+# project files
+*.sln     text eol=crlf
+*.csproj  text eol=crlf
+
+# binary
+*.png     binary
+*.jpg     binary
+*.dll     binary
+*.exe     binary
