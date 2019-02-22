@@ -161,8 +161,8 @@ namespace Tusky.Types
             new NpgsqlSqlType(DbType.Object, NpgsqlDbType.Range | NpgsqlDbType.Numeric),
         };
 
-        public override decimal MinValue => long.MinValue;
-        public override decimal MaxValue => long.MaxValue;
+        public override decimal MinValue => decimal.MinValue;
+        public override decimal MaxValue => decimal.MaxValue;
 
         public DecimalRangeType() : base() { }
     }
