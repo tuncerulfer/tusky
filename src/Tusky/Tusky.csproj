@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <PackageId>Tusky</PackageId>
-    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionPrefix>0.1.1</VersionPrefix>
     <Authors>Tuncer Ülfer</Authors>
     <Copyright>Copyright 2019 © Tuncer Ülfer</Copyright>
     <Description>Tusky is a PostgreSQL specific data types support library for NHibernate.</Description>
@@ -17,9 +17,9 @@
     <PackageReference Include="DeepCloner" Version="0.10.2" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="2.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
-    <PackageReference Include="NHibernate" Version="5.2.1" />
-    <PackageReference Include="Npgsql" Version="4.0.4" />
-    <PackageReference Include="Npgsql.NodaTime" Version="4.0.4" />
+    <PackageReference Include="NHibernate" Version="5.2.6" />
+    <PackageReference Include="Npgsql" Version="4.1.2" />
+    <PackageReference Include="Npgsql.NodaTime" Version="4.1.2" />
   </ItemGroup>
 
 </Project>

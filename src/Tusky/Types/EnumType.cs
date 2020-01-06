@@ -10,7 +10,7 @@ using Npgsql;
 namespace Tusky.Types
 {
     [Serializable]
-    public class EnumType<TEnum> : ImmutableType, IParameterizedType where TEnum : struct
+    public class EnumType<TEnum> : ImmutableType, IParameterizedType where TEnum : struct, Enum
     {
         public override SqlType[] SqlTypes => new SqlType[]
         {
